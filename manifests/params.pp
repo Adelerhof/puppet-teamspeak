@@ -1,7 +1,7 @@
 class teamspeak::params {
     $init_file    = "teamspeak/init/${::osfamily}.init.erb"
     $systemd_file = 'teamspeak/systemd/teamspeak.erb'
-    $version      = '3.1.13.8'
+    $version      = '3.0.13.8'
     $arch         = $::architecture
     $mirror       = 'http://dl.4players.de/ts/releases/<%=@version%>/teamspeak3-server_linux_<%=@download_arch%>-<%=@version%>.tar.bz2'
 
