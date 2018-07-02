@@ -5,7 +5,7 @@ class teamspeak::service::systemd inherits teamspeak {
     content => template($teamspeak::params::systemd_file),
     owner   => 'root',
     group   => 'root',
-    mode    => '0555',
+    mode    => '0444',
   }
   
   # https://tickets.puppetlabs.com/browse/PUP-3483
